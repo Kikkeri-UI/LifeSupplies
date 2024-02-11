@@ -1,0 +1,88 @@
+@use '../custom' as *;
+
+.nav-bg{
+    background-color: $primary !important;
+
+
+    .nav-flex {
+
+        font-family: 'Outfit',sans-serif;
+    
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .nav-links{
+            @include media-breakpoint-up(lg){
+                display: flex;
+                justify-content: space-between;
+            }
+            @include media-breakpoint-down(sm){
+                display: block;
+            }
+        }
+    
+    
+        .shopAll,
+        .starterSets,
+        .refills,
+        .bestSellers {
+            display: flex;
+            align-items: center;
+            margin-left: 0.875rem;
+            margin-right: 0.875rem;
+    
+            @include media-breakpoint-down(md){
+                i{
+                    margin: 0.75rem;
+                }  
+            }
+        }
+        .nav-link{
+            font-weight: 400;
+            color: #fffaf5;
+        }
+    
+        .right-section {
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                right: 0;
+                display: flex;
+                align-items: center;
+                margin-left: 0.875rem;
+                margin-right: 0.875rem;
+            }
+            @include media-breakpoint-down(md){
+                position: relative;
+                right: auto;
+                display: block;
+                margin-left: 0.875rem;
+                margin-right: 0.875rem;
+            }
+    
+            a{
+                margin-right: 0.875rem;
+                @include media-breakpoint-down(md){
+                    margin: 0.75rem;
+                }
+            }
+            .login-btn{
+                margin-right: 0.875rem;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+            }
+            i{
+                margin-right: 0.875rem;
+                margin-left: 0.875rem;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+            }
+    
+    
+        }
+    
+    }
+}
