@@ -1,0 +1,62 @@
+@use '../custom' as *;
+
+@mixin gradient{
+    background: linear-gradient(to right, rgba($blue, 0.95), rgba($secondary, 0.95));
+}
+
+
+.intro-section{
+    @include gradient;
+    padding: 10rem 0 10rem 0rem;
+    width: 100%;
+    height: 100%;
+
+    .display-2{
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        font-family: 'Outfit', sans-serif;
+    
+        &--intro{
+            display: inline-block;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+    
+        &--description{
+            font-size: 1rem;
+            display: block;
+            margin-top: 1.2rem;
+            font-family: 'Outfit', sans-serif;
+    
+            @include media-breakpoint-up(lg){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .btn-cta{
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+        padding: 1.5rem 0.75rem 1.5rem 0.75rem;
+        font-weight: 700;
+        margin: 0;
+        border: 0.1rem solid rgba($white,0.6);
+        background-color: $teal;
+        border-radius: 0.375rem;
+        transition: color 0.2s ease-in-out;
+    
+        &:hover{
+            color: $white;
+        }
+    }
+
+    .ratings-img{
+        width: 100%;
+        object-fit: contain;
+
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+    }
+}

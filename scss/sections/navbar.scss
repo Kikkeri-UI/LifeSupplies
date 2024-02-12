@@ -69,6 +69,9 @@
             }
             .login-btn{
                 margin-right: 0.875rem;
+                border: 0.5rem;
+                border-color: #fffaf5;
+                color: #fffaf5;
                 @include media-breakpoint-down(md){
                     display: none;
                 }
