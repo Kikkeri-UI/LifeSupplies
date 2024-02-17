@@ -20,9 +20,15 @@ $green:   #198754;
 $teal:    #20c997;
 $cyan:    #E0FFFF;
 $blue: #E0FFFF;
+$green-neon : #9FFC9F;
 
 
 // PRIMARY AND SECONDARY COLORS
 
 $primary:       $green;
 $secondary:     $cyan;
+
+// product background colors
+
+$product-odd: $blue;
+$product-even : $green-neon;

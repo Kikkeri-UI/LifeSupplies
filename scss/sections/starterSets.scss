@@ -1,0 +1,108 @@
+@use '../custom' as *;
+@use '../components/animations.scss' as *;
+
+
+.starterets{
+    padding: 4rem 0;
+}
+
+.product{
+    background-color: $blue;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    border-left: 0.2rem solid $black;
+
+    .product-img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .product-info{
+            background-color: rgba($primary,0.75);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Outfit',sans-serif;
+    
+            .caption{
+                text-align: center;
+                color: $white;
+                width: 80%;
+                font-weight: 300;
+                @include absoluteCenter;
+    
+                h4{
+                    
+                    display: block;
+                }
+            }
+
+            .button-group{
+                @include productButtons;
+                display: flex;
+                justify-content: space-between;
+                justify-content: center;
+                align-items: center;
+                
+
+                .product-btn{
+                background-color: transparent;
+                color: $white;
+                padding: 0.5rem 5rem;
+                width: 100%;
+                }
+
+                .more-btn{
+                    background-color: transparent;
+                    border: 0.25rem solid $white;
+                }
+            }
+        }
+    
+        &:hover{
+            .product-info{
+                opacity: 1;
+                visibility: visible;
+                @include transitionProperty;
+                cursor: pointer;
+            }
+            img{
+                transform: scale(1.5);
+                @include transitionProperty;
+                
+            }
+            
+        }
+
+        &:hover{
+            h4{
+                color: $white;
+            }
+        }
+        
+}
+
+.product-1{
+    background-image: url('../../images/pr-1.webp');
+}
+.product-2{
+    background-image: url('../../images/pr-2.webp');
+}
+.product-3{
+    background-image: url('../../images/pr-3.webp');
+}
+.product-4{
+    background-image: url('../../images/pr-4.webp');
+}
