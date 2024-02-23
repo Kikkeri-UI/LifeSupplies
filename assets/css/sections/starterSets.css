@@ -11857,6 +11857,19 @@ textarea.form-control-lg {
 }
 .starterets {
   padding: 4rem 0;
+  background-color: #F2F6FC;
+}
+
+.desc-btn {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Outfit", sans-serif;
+}
+.desc-btn .shop-btn {
+  background-color: #20c997;
+  padding: 0.25rem 1rem;
+  font-size: 1.2rem;
+  color: #000;
 }
 
 .product {
@@ -11867,7 +11880,8 @@ textarea.form-control-lg {
   height: 24rem;
   overflow: hidden;
   margin-bottom: 1.2rem;
-  border-left: 0.2rem solid #000;
+  border-left: 0.2rem solid #20c997;
+  object-fit: contain;
 }
 .product .product-img {
   width: 100%;
@@ -11934,6 +11948,32 @@ textarea.form-control-lg {
 }
 .product:hover h4 {
   color: #fff;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-family: "Outfit", sans-serif;
+  color: #000;
+  font-weight: 400;
+  margin-left: 0.2rem;
+}
+
+.product-price {
+  font-size: 1.125rem;
+  font-family: "Outfit", sans-serif;
+  color: #198754;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.36px;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+.product-price .old-price {
+  text-decoration: line-through;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 0.25rem;
+  color: #74be9c;
 }
 
 .product-1 {
