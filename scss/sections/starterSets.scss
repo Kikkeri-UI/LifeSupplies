@@ -4,7 +4,7 @@
 
 .starterets{
     padding: 4rem 0;
-    background-color: #F2F6FC;
+    background-color: $white-100;
     
 }
 
@@ -31,7 +31,7 @@
     overflow: hidden;
     margin-bottom: 1.2rem;
     border-left: 0.2rem solid $teal;
-    object-fit: contain;
+    object-fit: cover;
 
     .product-img {
             width: 100%;
@@ -92,6 +92,7 @@
             .product-info{
                 opacity: 1;
                 visibility: visible;
+                object-position: 1 -1vw;
                 @include transitionProperty;
                 cursor: pointer;
             }

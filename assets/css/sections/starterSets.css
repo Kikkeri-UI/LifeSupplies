@@ -11857,7 +11857,7 @@ textarea.form-control-lg {
 }
 .starterets {
   padding: 4rem 0;
-  background-color: #F2F6FC;
+  background-color: #FFFAF5;
 }
 
 .desc-btn {
@@ -11881,7 +11881,7 @@ textarea.form-control-lg {
   overflow: hidden;
   margin-bottom: 1.2rem;
   border-left: 0.2rem solid #20c997;
-  object-fit: contain;
+  object-fit: cover;
 }
 .product .product-img {
   width: 100%;
@@ -11935,6 +11935,7 @@ textarea.form-control-lg {
 .product:hover .product-info {
   opacity: 1;
   visibility: visible;
+  object-position: 1 -1vw;
   transition-duration: 1000ms;
   transition-property: all;
   transition-timing-function: ease-in-out;
