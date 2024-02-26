@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../components/animations.scss' as *;
+
+.routine{
+    background-color: $teal;
+    font-family: 'Outfit' , sans-serif;
+    padding: 4rem 0;
+
+    .routine-card{
+        width: 100%;
+        height: 18rem;
+        border-radius: 0.75rem;
+        border: 4px solid $white-100;
+    }
+
+    .r-1{
+        background-image: url('../../images/r-1.webp');
+    }
+    .r-2{
+        background-image: url('../../images/r-2.webp');
+    }
+    .r-3{
+        background-image: url('../../images/r-3.webp');
+    }
+
+    .r-card-info{
+        h3{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-align: justify;
+        }
+    }
+
+}
