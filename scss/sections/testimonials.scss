@@ -1,0 +1,55 @@
+@use '../custom' as *;
+@use '../components/animations.scss' as *;
+
+.testimonials{
+    padding: 4rem 0;
+    font-family: 'Outfit',sans-serif;
+
+    .testimonial-header{
+        justify-content: space-between;
+
+        .testimonial-heading{
+            font-size: 1.875rem;
+        }
+
+        .testimonial-btn{
+            display: flex;
+            cursor: pointer;
+
+            .previous-btn{
+                margin-right: 1.5rem;
+            }
+            .btn-opacity{
+                opacity: 40%;
+                cursor:not-allowed;
+            }
+    
+        }
+    }
+
+    .testimonial-wrapper{
+        .testimonial-img{
+
+            img{
+                width: 100%;
+                border-radius: 0.875rem;
+            }
+        }
+
+        .testimonial-desc{
+            padding: 2rem;
+            
+            .location{
+                align-items: center;
+                
+            }
+        }
+        .test-shop-btn{
+            background-color: #CDEB76;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+        }
+    }
+
+    
+}
