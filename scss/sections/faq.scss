@@ -1,0 +1,24 @@
+@use '../custom' as *;
+@use '../components/animations.scss' as *;
+
+.faq{
+    background-color: $white-100;
+    padding: 4rem 0;
+    font-family: 'Outfit',sans-serif;
+
+    .accordion{
+        .accordion-item{
+            border: 0.075rem solid $black;
+            border-radius: 0;
+
+            .accordion-body{
+                p{
+                    font-size: 0.975rem;
+                }
+            }
+            .header-bg{
+                background-color: $teal-100;
+            }
+        }
+    }
+}
