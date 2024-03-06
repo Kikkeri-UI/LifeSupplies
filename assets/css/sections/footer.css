@@ -11872,27 +11872,39 @@ textarea.form-control-lg {
   border-left: 0;
   background-color: #FFFAF5;
   color: #000;
+  margin-bottom: 2rem;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
   .footer .name, .footer .email {
-    margin: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
     display: flex;
   }
-}
-.footer .subscribe-btn {
-  background-color: #9FFC9F;
-  font-size: 1.125rem;
-  padding: 0.375rem 1rem;
-  border-radius: 0.25rem;
-  margin-top: 2rem;
-  border: 0;
 }
 .footer .footer-right {
   display: flex;
 }
 @media (max-width: 767.98px) {
+  .footer .footer-right {
+    margin-top: 1.5rem;
+  }
+}
+.footer .footer-right .useful-links {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
   .footer .footer-right .useful-links {
-    padding: 0;
+    padding-left: 4rem;
+  }
+}
+.footer .footer-right .media-links i {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+@media (max-width: 767.98px) {
+  .footer .footer-right .media-links i {
+    height: 1.25rem;
+    width: 1.25rem;
   }
 }
 

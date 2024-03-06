@@ -21,7 +21,7 @@ const author= document.getElementById('reviewAuthor');
 const geoLocation = document.getElementById('geoLocation');
 const product = document.getElementById('product');
 const review = document.getElementById('review');
-const shopbtn = document.querySelector('.test-shop-btn');
+const shopbtn = document.querySelector('.testimonial-shop-btn');
 
 window.addEventListener('DOMContentLoaded', ()=>{
     debugger;

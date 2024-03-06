@@ -1,13 +1,18 @@
 @use 'custom';
 
+
+// sections
 @use 'sections/navbar.scss';
 @use 'sections/intro.scss';
 @use 'sections/benefits.scss';
 @use 'sections/starterSets.scss';
-@use 'components/animations.scss';
 @use 'sections/maverik.scss';
 @use 'sections/bestSellers.scss';
 @use 'sections/routine.scss';
 @use 'sections/testimonials.scss';
 @use 'sections/faq.scss';
 @use 'sections/footer.scss';
+
+//components
+@use 'components/animations.scss';
+@use 'components/buttons.scss';
