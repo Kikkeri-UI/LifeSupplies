@@ -12359,9 +12359,9 @@ textarea.form-control-lg {
 .faq .accordion .accordion-item .accordion-body p {
   font-size: 0.975rem;
 }
-.faq .accordion .accordion-item .header-bg {
-  background-color: #9FFC9F;
-}
+/* .faq .accordion .accordion-item .header-bg {
+  background-color: #cfe2ff;
+} */
 
 .footer {
   background-color: #E0FFFF;
@@ -12443,6 +12443,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   color: #000;
+  position: relative;
 }
 @media (max-width: 991.98px) {
   .cta-btn-primary {

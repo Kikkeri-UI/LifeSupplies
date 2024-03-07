@@ -19,11 +19,35 @@
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     color: $black;
+    position: relative;
 
     @include media-breakpoint-down(lg){
         font-size: 1rem;
         //padding: 0.375rem 0.75rem;
     }
+
+    // &:hover{
+    //     scale: text;
+    // }
+    // i:hover{
+
+    // }
+
+    // span{
+    //     position: absolute;
+    //     width: 2.5rem;
+    //     height: 2.5rem;
+    //     background-color: $primary;
+    //     top: 50%;
+    //     right: 5px;
+    //     transform: translateY(-50%);
+    //     border-radius: 25%;
+    // }
+
+    // i{
+    //     line-height: 2.5rem;
+    //     font-size: 1rem;
+    // }
 }
 
 .testimonial-shop-btn{
